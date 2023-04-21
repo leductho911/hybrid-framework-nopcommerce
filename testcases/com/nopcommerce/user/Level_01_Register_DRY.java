@@ -4,7 +4,6 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
@@ -18,13 +17,11 @@ public class Level_01_Register_DRY {
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
 	String emailAddress;
-	JavascriptExecutor jsExecutor;
 
 	@BeforeClass
 	public void beforeClass() {
 		System.setProperty("webdriver.gecko.driver", projectPath + "/browserDrivers/geckodriver");
 		driver = new FirefoxDriver();
-		jsExecutor = (JavascriptExecutor) driver;
 		emailAddress = "leductho" + randomNumber() + "@gmail.com";
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

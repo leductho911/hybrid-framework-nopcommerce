@@ -6,7 +6,6 @@ package com.nopcommerce.user;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
@@ -22,13 +21,11 @@ public class Level_02_Apply_BasePage_3 extends BasePage {
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
 	String emailAddress;
-	JavascriptExecutor jsExecutor;
 
 	@BeforeClass
 	public void beforeClass() {
 		System.setProperty("webdriver.gecko.driver", projectPath + "/browserDrivers/geckodriver");
 		driver = new FirefoxDriver();
-		jsExecutor = (JavascriptExecutor) driver;
 		emailAddress = "leductho" + randomNumber() + "@gmail.com";
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -79,11 +76,12 @@ public class Level_02_Apply_BasePage_3 extends BasePage {
 		sendKeysToElement(driver, "//input[@id='Email']", emailAddress);
 		sendKeysToElement(driver, "//input[@id='Password']", "123456");
 		sendKeysToElement(driver, "//input[@id='ConfirmPassword']", "123456");
-		clickToElement(driver, "//input[@id='gender-male']");
 
 		clickToElement(driver, "//button[@id='register-button']");
 
 		Assert.assertEquals(getElementText(driver, "//div[@class='result']"), "Your registration completed");
+
+		clickToElement(driver, "//a[@class='ico-logout']");
 
 	}
 
@@ -101,7 +99,8 @@ public class Level_02_Apply_BasePage_3 extends BasePage {
 
 		clickToElement(driver, "//button[@id='register-button']");
 
-		Assert.assertTrue(isElementDisplayed(driver, "//li[normalize-space()='The specified email already exists']"));
+		Assert.assertEquals(getElementText(driver, "//div[contains(@class,'message-error')]//li"),
+				"The specified email already exists");
 
 	}
 
