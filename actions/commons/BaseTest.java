@@ -1,5 +1,6 @@
 package commons;
 
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -28,9 +29,14 @@ public class BaseTest {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		// mở URL nó sẽ qua trang HomePage
-		driver.get("https://demo.nopcommerce.com/");
+		driver.get(GlobalConstants.USER_PAGE_URL);
 		return driver;
 
 	}
 
+	public int randomNumber() {
+		Random rand = new Random();
+		return rand.nextInt(9999);
+
+	}
 }

@@ -12,15 +12,15 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import pageObjects.HomePageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.nopCommerce.user.UserHomePageObject;
+import pageObjects.nopCommerce.user.UserRegisterPageObject;
 
 public class Level_03_Page_Object_Model_01_Register {
 
 	private WebDriver driver;
 	private String projectPath = System.getProperty("user.dir");
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
 	private String firstName, lastName, password, emailAddress;
 
 	@BeforeClass
@@ -31,7 +31,7 @@ public class Level_03_Page_Object_Model_01_Register {
 
 		// mở URL nó sẽ qua trang HomePage
 		driver.get("https://demo.nopcommerce.com/");
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 
 		firstName = "Automation";
 		lastName = "FC";
@@ -47,7 +47,7 @@ public class Level_03_Page_Object_Model_01_Register {
 		homePage.clickToRegisterLink();
 
 		// Click Register Link thì nó sẽ mở trang Register > khởi tạo Register page
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 		registerPage.clickToRegisterButton();
 
 		Assert.assertEquals(registerPage.getErrorMessageAtFirstnameTextBox(), "First name is required.");
@@ -63,7 +63,7 @@ public class Level_03_Page_Object_Model_01_Register {
 		homePage.clickToRegisterLink();
 
 		// Click Register Link thì nó sẽ mở trang Register > khởi tạo Register page
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		// sendKeysToElement(driver, "//input[@id='Email']", "dsaf4gmail.com");
 		registerPage.inputToEmailTextbox("dsaf4gmail.com");
@@ -81,7 +81,7 @@ public class Level_03_Page_Object_Model_01_Register {
 		homePage.clickToRegisterLink();
 
 		// Click Register Link thì nó sẽ mở trang Register > khởi tạo Register page
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		// sendKeysToElement(driver, "//input[@id='FirstName']", "Automation");
 		// sendKeysToElement(driver, "//input[@id='LastName']", "FC");
@@ -109,7 +109,7 @@ public class Level_03_Page_Object_Model_01_Register {
 		homePage.clickToRegisterLink();
 
 		// Click Register Link thì nó sẽ mở trang Register > khởi tạo Register page
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		registerPage.inputToFirstnameTextbox(firstName);
 		registerPage.inputToLastnameTextbox(lastName);
@@ -129,7 +129,7 @@ public class Level_03_Page_Object_Model_01_Register {
 	public void Register_05_Register_Password_Less_Than_6_Chars() {
 		homePage.clickToRegisterLink();
 		// Click Register Link thì nó sẽ mở trang Register > khởi tạo Register page
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		registerPage.inputToPasswordTextbox("123");
 
@@ -146,7 +146,7 @@ public class Level_03_Page_Object_Model_01_Register {
 	public void Register_06_Register_Invalid_Confirm_Password() {
 		homePage.clickToRegisterLink();
 		// Click Register Link thì nó sẽ mở trang Register > khởi tạo Register page
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		registerPage.inputToPasswordTextbox(password);
 		registerPage.inputToConfirmPasswordTextbox(emailAddress);

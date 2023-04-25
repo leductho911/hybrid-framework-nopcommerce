@@ -15,14 +15,44 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import pageObjects.nopCommerce.user.UserAddressesPageObject;
+import pageObjects.nopCommerce.user.UserCustomerInforPageObject;
+import pageObjects.nopCommerce.user.UserOrdersPageObject;
+import pageObjects.nopCommerce.user.UserRewardPointsPageObject;
+import pageUIs.nopCommerce.user.UserBasePageUI;
+
 public class BasePage {
 
 	public static BasePage getBasePageObject() {
 		return new BasePage();
 	}
 
-	protected void openPageUrl(WebDriver driver, String pageUrl) {
+	public void openPageUrl(WebDriver driver, String pageUrl) {
 		driver.get(pageUrl);
+	}
+
+	public UserAddressesPageObject openAddressesPage(WebDriver driver) {
+		waitForElementVisible(driver, UserBasePageUI.ADDRESSES_LINK);
+		clickToElement(driver, UserBasePageUI.ADDRESSES_LINK);
+		return PageGeneratorManager.getUserAddressesPage(driver);
+	}
+
+	public UserOrdersPageObject openOrdersPage(WebDriver driver) {
+		waitForElementVisible(driver, UserBasePageUI.ORDERS_LINK);
+		clickToElement(driver, UserBasePageUI.ORDERS_LINK);
+		return PageGeneratorManager.getUserOrdersPage(driver);
+	}
+
+	public UserRewardPointsPageObject openRewardPointsPage(WebDriver driver) {
+		waitForElementVisible(driver, UserBasePageUI.REWARD_POINTS_LINK);
+		clickToElement(driver, UserBasePageUI.REWARD_POINTS_LINK);
+		return PageGeneratorManager.getUserRewardPointsPage(driver);
+	}
+
+	public UserCustomerInforPageObject openCustomerInforPage(WebDriver driver) {
+		waitForElementVisible(driver, UserBasePageUI.CUSTOMER_INFO_LINK);
+		clickToElement(driver, UserBasePageUI.CUSTOMER_INFO_LINK);
+		return PageGeneratorManager.getUserCustomerInforPage(driver);
 	}
 
 	protected String getPageTitle(WebDriver driver) {

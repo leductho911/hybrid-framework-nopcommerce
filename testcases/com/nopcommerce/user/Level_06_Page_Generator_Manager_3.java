@@ -2,38 +2,32 @@
 
 package com.nopcommerce.user;
 
-import java.util.Random;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import commons.BaseTest;
+import commons.PageGeneratorManager;
 import pageObjects.nopCommerce.user.UserHomePageObject;
 import pageObjects.nopCommerce.user.UserLoginPageObject;
 import pageObjects.nopCommerce.user.UserRegisterPageObject;
 
-public class Level_03_Page_Object_Model_02_Login {
+public class Level_06_Page_Generator_Manager_3 extends BaseTest {
 
 	private WebDriver driver;
-	private String projectPath = System.getProperty("user.dir");
 	private UserHomePageObject homePage;
 	private UserRegisterPageObject registerPage;
 	private UserLoginPageObject loginPage;
 	private String firstName, lastName, validPassword, incorrectPassword, validEmail, invalidEmail, notFoundEmail;
 
+	@Parameters("browser")
 	@BeforeClass
-	public void beforeClass() {
-		System.setProperty("webdriver.gecko.driver", projectPath + "/browserDrivers/geckodriver");
-		driver = new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-		// mở url tới HomePage
-		driver.get("https://demo.nopcommerce.com/");
-		homePage = new UserHomePageObject(driver);
+	public void beforeClass(String browserName) {
+		driver = getBrowserDriver(browserName);
+		homePage = PageGeneratorManager.getUserHomePage(driver);
 
 		firstName = "Automation";
 		lastName = "FC";
@@ -44,8 +38,7 @@ public class Level_03_Page_Object_Model_02_Login {
 		notFoundEmail = "leductho" + randomNumber() + "@yahoo.com";
 
 		// Pre-Condition : register an account
-		homePage.clickToRegisterLink();
-		registerPage = new UserRegisterPageObject(driver);
+		registerPage = homePage.clickToRegisterLink();
 
 		registerPage.inputToFirstnameTextbox(firstName);
 		registerPage.inputToLastnameTextbox(lastName);
@@ -63,10 +56,7 @@ public class Level_03_Page_Object_Model_02_Login {
 
 	@Test
 	public void Login_01_Empty_Data() {
-		homePage.clickToLoginLink();
-
-		// khởi tạo trang login
-		loginPage = new UserLoginPageObject(driver);
+		loginPage = homePage.clickToLoginLink();
 
 		loginPage.clickToLoginButton();
 		Assert.assertEquals(loginPage.getErrorMessageAtEmailTextbox(), "Please enter your email");
@@ -75,10 +65,7 @@ public class Level_03_Page_Object_Model_02_Login {
 
 	@Test
 	public void Login_02_Invalid_Email() {
-		homePage.clickToLoginLink();
-
-		// khởi tạo trang login
-		loginPage = new UserLoginPageObject(driver);
+		loginPage = homePage.clickToLoginLink();
 
 		loginPage.inputToEmailTextbox(invalidEmail);
 		loginPage.inputToPasswordTextbox(validPassword);
@@ -90,10 +77,7 @@ public class Level_03_Page_Object_Model_02_Login {
 
 	@Test
 	public void Login_03_Unregistered_Email() {
-		homePage.clickToLoginLink();
-
-		// khởi tạo trang login
-		loginPage = new UserLoginPageObject(driver);
+		loginPage = homePage.clickToLoginLink();
 
 		loginPage.inputToEmailTextbox(notFoundEmail);
 		loginPage.inputToPasswordTextbox(validPassword);
@@ -105,10 +89,7 @@ public class Level_03_Page_Object_Model_02_Login {
 
 	@Test
 	public void Login_04_Existing_Email_Empty_Password() {
-		homePage.clickToLoginLink();
-
-		// khởi tạo trang login
-		loginPage = new UserLoginPageObject(driver);
+		loginPage = homePage.clickToLoginLink();
 
 		loginPage.inputToEmailTextbox(validEmail);
 		loginPage.clickToLoginButton();
@@ -119,10 +100,7 @@ public class Level_03_Page_Object_Model_02_Login {
 
 	@Test
 	public void Login_05_Existing_Email_Incorrect_Password() {
-		homePage.clickToLoginLink();
-
-		// khởi tạo trang login
-		loginPage = new UserLoginPageObject(driver);
+		loginPage = homePage.clickToLoginLink();
 
 		loginPage.inputToEmailTextbox(validEmail);
 		loginPage.inputToPasswordTextbox(incorrectPassword);
@@ -135,14 +113,11 @@ public class Level_03_Page_Object_Model_02_Login {
 
 	@Test
 	public void Login_06_Success() {
-		homePage.clickToLoginLink();
-
-		loginPage = new UserLoginPageObject(driver);
+		loginPage = homePage.clickToLoginLink();
 		loginPage.inputToEmailTextbox(validEmail);
 		loginPage.inputToPasswordTextbox(validPassword);
-		loginPage.clickToLoginButton();
+		homePage = loginPage.clickToLoginButton();
 
-		homePage = new UserHomePageObject(driver);
 		Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
 
 	}
@@ -150,12 +125,6 @@ public class Level_03_Page_Object_Model_02_Login {
 	@AfterClass
 	public void afterClass() {
 		driver.quit();
-	}
-
-	public int randomNumber() {
-		Random rand = new Random();
-		return rand.nextInt(9999);
-
 	}
 
 }

@@ -1,6 +1,6 @@
-package pageUIs;
+package pageUIs.nopCommerce.user;
 
-public class LoginPageUI {
+public class UserLoginPageUI {
 	public static final String REGISTER_LINK = "//a[@class='ico-register']";
 	public static final String LOGIN_BUTTON = "//button[contains(@class,'login-button')]";
 	public static final String EMAIL_ERROR_MESSAGE = "//span[@id='Email-error']";
