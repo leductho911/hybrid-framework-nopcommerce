@@ -11,15 +11,15 @@ import org.testng.annotations.Test;
 
 import commons.BaseTest;
 import commons.PageGeneratorManager;
+import pageObjects.nopCommerce.user.FooterWishlistPageObject;
 import pageObjects.nopCommerce.user.UserAddressesPageObject;
 import pageObjects.nopCommerce.user.UserCustomerInforPageObject;
 import pageObjects.nopCommerce.user.UserHomePageObject;
 import pageObjects.nopCommerce.user.UserLoginPageObject;
 import pageObjects.nopCommerce.user.UserOrdersPageObject;
 import pageObjects.nopCommerce.user.UserRegisterPageObject;
-import pageObjects.nopCommerce.user.UserRewardPointsPageObject;
 
-public class Level_07_Switch_Page extends BaseTest {
+public class Level_09_Dynamic_Locator extends BaseTest {
 
 	private WebDriver driver;
 	private UserHomePageObject homePage;
@@ -27,10 +27,10 @@ public class Level_07_Switch_Page extends BaseTest {
 	private UserLoginPageObject loginPage;
 	private String firstName, lastName, password, email;
 
-	private UserCustomerInforPageObject customerInforPage;
-	private UserAddressesPageObject addressesPage;
-	private UserOrdersPageObject ordersPage;
-	private UserRewardPointsPageObject rewardPointsPage;
+	private UserCustomerInforPageObject userCustomerInforPage;
+	private UserAddressesPageObject userAddressesPage;
+	private UserOrdersPageObject userOrdersPage;
+	private FooterWishlistPageObject footerWishlistPage;
 
 	@Parameters("browser")
 	@BeforeClass
@@ -46,7 +46,7 @@ public class Level_07_Switch_Page extends BaseTest {
 	}
 
 	@Test
-	public void User_01_Register() {
+	public void User_01_Register_Login() {
 		registerPage = homePage.clickToRegisterLink();
 
 		registerPage.inputToFirstnameTextbox(firstName);
@@ -60,35 +60,31 @@ public class Level_07_Switch_Page extends BaseTest {
 
 		homePage = registerPage.clickToContinueButton();
 
-	}
-
-	@Test
-	public void User_02_Login() {
 		loginPage = homePage.clickToLoginLink();
 		loginPage.inputToEmailTextbox(email);
 		loginPage.inputToPasswordTextbox(password);
 		homePage = loginPage.clickToLoginButton();
 		Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
 
+		userCustomerInforPage = homePage.clickToMyAccountLink();
+
+		Assert.assertTrue(userCustomerInforPage.isCustomerInforPageDisplayed());
 	}
 
 	@Test
-	public void User_03_Customer_Infor() {
-		customerInforPage = homePage.clickToMyAccountLink();
+	public void User_02_Dynamic_Page() {
+		// addressesPage = customerInforPage.openAddressesPage(driver);
+		// cach 2
+		userCustomerInforPage.openPageAtMyAccountPage(driver, "Addresses");
+		userAddressesPage = PageGeneratorManager.getUserAddressesPage(driver);
 
-		Assert.assertTrue(customerInforPage.isCustomerInforPageDisplayed());
-	}
+		// cach 1
+		// userOrdersPage = userAddressesPage.openOrdersPage(driver);
+		userOrdersPage = (UserOrdersPageObject) userAddressesPage.openPageAtMyAccountPageName(driver, "Orders");
 
-	@Test
-	public void User_04_Switch_Page() {
-		addressesPage = customerInforPage.openAddressesPage(driver);
-		ordersPage = addressesPage.openOrdersPage(driver);
-		rewardPointsPage = ordersPage.openRewardPointsPage(driver);
-		customerInforPage = rewardPointsPage.openCustomerInforPage(driver);
-	}
+		userOrdersPage.openPageAtHeaderOrFooter(driver, "footer-upper", "Wishlist");
+		footerWishlistPage = PageGeneratorManager.getFooterWishlistPage(driver);
 
-	@Test
-	public void User_05_Switch_Role() {
 	}
 
 	@AfterClass
