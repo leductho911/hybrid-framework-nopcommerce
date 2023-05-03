@@ -30,10 +30,10 @@ public class Level_08_Switch_Role extends BaseTest {
 	private AdminDashboardPageObject adminDashboardPage;
 	private String firstName, lastName, userPassword, userEmail, adminEmail, adminPassword;
 
-	@Parameters("browser")
+	@Parameters({ "browser", "environment" })
 	@BeforeClass
-	public void beforeClass(String browserName) {
-		driver = getBrowserDriver(browserName);
+	public void beforeClass(String browserName, String environmentName) {
+		driver = getBrowserDriver(browserName, environmentName);
 		homePage = PageGeneratorManager.getUserHomePage(driver);
 
 		firstName = "Automation";

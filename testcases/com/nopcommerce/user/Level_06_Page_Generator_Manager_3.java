@@ -23,10 +23,10 @@ public class Level_06_Page_Generator_Manager_3 extends BaseTest {
 	private UserLoginPageObject loginPage;
 	private String firstName, lastName, validPassword, incorrectPassword, validEmail, invalidEmail, notFoundEmail;
 
-	@Parameters("browser")
+	@Parameters({ "browser", "environment" })
 	@BeforeClass
-	public void beforeClass(String browserName) {
-		driver = getBrowserDriver(browserName);
+	public void beforeClass(String browserName, String environmentName) {
+		driver = getBrowserDriver(browserName, environmentName);
 		homePage = PageGeneratorManager.getUserHomePage(driver);
 
 		firstName = "Automation";

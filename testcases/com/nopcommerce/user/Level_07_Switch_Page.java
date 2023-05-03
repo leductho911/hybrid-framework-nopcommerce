@@ -32,10 +32,10 @@ public class Level_07_Switch_Page extends BaseTest {
 	private UserOrdersPageObject ordersPage;
 	private UserRewardPointsPageObject rewardPointsPage;
 
-	@Parameters("browser")
+	@Parameters({ "browser", "environment" })
 	@BeforeClass
-	public void beforeClass(String browserName) {
-		driver = getBrowserDriver(browserName);
+	public void beforeClass(String browserName, String environmentName) {
+		driver = getBrowserDriver(browserName, environmentName);
 		homePage = PageGeneratorManager.getUserHomePage(driver);
 
 		firstName = "Automation";

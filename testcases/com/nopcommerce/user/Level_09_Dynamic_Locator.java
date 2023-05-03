@@ -32,10 +32,10 @@ public class Level_09_Dynamic_Locator extends BaseTest {
 	private UserOrdersPageObject userOrdersPage;
 	private FooterWishlistPageObject footerWishlistPage;
 
-	@Parameters("browser")
+	@Parameters({ "browser", "environment" })
 	@BeforeClass
-	public void beforeClass(String browserName) {
-		driver = getBrowserDriver(browserName);
+	public void beforeClass(String browserName, String environmentName) {
+		driver = getBrowserDriver(browserName, environmentName);
 		homePage = PageGeneratorManager.getUserHomePage(driver);
 
 		firstName = "Automation";
