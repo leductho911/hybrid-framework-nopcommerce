@@ -56,6 +56,7 @@ public class OOP_02_BankAccount {
 		account01.withdrawMoney(2000);
 		System.out.println("Current balance: " + account01.getBalance());
 		account01.getAccountInfo();
+		
 	}
 
 }
