@@ -10,6 +10,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
+import exception.BrowserNotSupport;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
@@ -46,7 +47,7 @@ public class BaseTest {
 			driver = new ChromeDriver(options);
 			break;
 		default:
-			break;
+			throw new BrowserNotSupport(browserName);
 		}
 
 		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
