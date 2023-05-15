@@ -16,7 +16,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseTest {
 	private WebDriver driver;
 
-	protected WebDriver getBrowserDriver(String browserName, String environmentName) {
+	protected WebDriver getBrowserDriver(String browserName, String appUrl) {
 		BrowserList browser = BrowserList.valueOf(browserName.toUpperCase());
 
 		switch (browser) {
@@ -51,11 +51,11 @@ public class BaseTest {
 		}
 
 		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
-		driver.get(getEnvironmentUrl(environmentName));
+		driver.get(appUrl);
 		return driver;
 	}
 
-	private String getEnvironmentUrl(String environmentName) {
+	protected String getEnvironmentUrl(String environmentName) {
 		String envUrl = null;
 		EnvironmentList environment = EnvironmentList.valueOf(environmentName.toUpperCase());
 		if (environment == EnvironmentList.DEV) {
