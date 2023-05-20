@@ -1,6 +1,6 @@
 //Framework 18 - Handle DataTable/ DataGrid - Part I
 
-package com.jquery.datatable;
+package com.jquery;
 
 import java.util.List;
 
@@ -12,7 +12,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObject.jQuery.HomePageObject;
+import pageObject.jQuery.dataTable.HomePageObject;
 
 public class Level_10_DataTable_DataGrid extends BaseTest {
 
@@ -25,7 +25,7 @@ public class Level_10_DataTable_DataGrid extends BaseTest {
 	@BeforeClass
 	public void beforeClass(String browserName, String appURL) {
 		driver = getBrowserDriver(browserName, appURL);
-		homePage = pageObject.jQuery.PageGeneratorManager.getHomePage(driver);
+		homePage = pageObject.jQuery.dataTable.PageGeneratorManager.getHomePage(driver);
 	}
 
 	// @Test

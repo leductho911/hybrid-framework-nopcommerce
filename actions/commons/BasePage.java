@@ -20,6 +20,7 @@ import pageObjects.nopCommerce.user.UserAddressesPageObject;
 import pageObjects.nopCommerce.user.UserCustomerInforPageObject;
 import pageObjects.nopCommerce.user.UserOrdersPageObject;
 import pageObjects.nopCommerce.user.UserRewardPointsPageObject;
+import pageUI.jQuery.uploadFile.BasePageUI;
 import pageUIs.nopCommerce.user.UserBasePageUI;
 
 public class BasePage {
@@ -456,11 +457,15 @@ public class BasePage {
 		boolean status = (boolean) jsExecutor.executeScript(
 				"return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0",
 				getWebElement(driver, locatorType));
-		if (status) {
-			return true;
-		} else {
-			return false;
-		}
+		return status;
+	}
+
+	protected boolean isImageLoaded(WebDriver driver, String locatorType, String... dynamicValues) {
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		boolean status = (boolean) jsExecutor.executeScript(
+				"return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0",
+				getWebElement(driver, getDynamicXpath(locatorType, dynamicValues)));
+		return status;
 	}
 
 	public void sleepInSecond(long timeInSecond) {
@@ -529,6 +534,16 @@ public class BasePage {
 	public void waitForAlertPresence(WebDriver driver, String locatorType) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
 		explicitWait.until(ExpectedConditions.alertIsPresent());
+	}
+
+	public void uploadMultipleFiles(WebDriver driver, String... fileNames) {
+		String filePath = GlobalConstants.UPLOAD_FILE;
+		String fullFileName = "";
+		for (String file : fileNames) {
+			fullFileName = fullFileName + filePath + file + "\n";
+		}
+		fullFileName = fullFileName.trim();
+		getWebElement(driver, BasePageUI.UPLOAD_FILE).sendKeys(fullFileName);
 	}
 
 	private long longTimeout = GlobalConstants.LONG_TIMEOUT;

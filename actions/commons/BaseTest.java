@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
 
 import exception.BrowserNotSupport;
@@ -45,6 +46,13 @@ public class BaseTest {
 			options.addArguments("headless");
 			options.addArguments("window-size=1920x1080");
 			driver = new ChromeDriver(options);
+			break;
+		case FIREFOX_HEADLESS:
+			WebDriverManager.firefoxdriver().setup();
+			FirefoxOptions options1 = new FirefoxOptions();
+			options1.addArguments("--headless");
+			options1.addArguments("window-size=1920x1080");
+			driver = new FirefoxDriver(options1);
 			break;
 		default:
 			throw new BrowserNotSupport(browserName);
