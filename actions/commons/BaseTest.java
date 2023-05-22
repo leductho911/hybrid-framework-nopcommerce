@@ -13,6 +13,8 @@ import org.openqa.selenium.safari.SafariDriver;
 
 import exception.BrowserNotSupport;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.testng.Assert;
+import org.testng.Reporter;
 
 public class BaseTest {
 	private WebDriver driver;
@@ -60,8 +62,11 @@ public class BaseTest {
 
 		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
 		driver.get(appUrl);
+		driver.manage().window().maximize();
 		return driver;
 	}
+
+
 
 	protected String getEnvironmentUrl(String environmentName) {
 		String envUrl = null;
@@ -83,4 +88,49 @@ public class BaseTest {
 		return rand.nextInt(9999);
 
 	}
+
+	protected boolean verifyTrue(boolean condition) {
+		boolean pass = true;
+		try {
+			Assert.assertTrue(condition);
+			System.out.println(" -------------------------- PASSED -------------------------- ");
+		} catch (Throwable e) {
+			System.out.println(" -------------------------- FAILED -------------------------- ");
+			pass = false;
+			VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
+			Reporter.getCurrentTestResult().setThrowable(e);
+		}
+		return pass;
+	}
+
+
+	protected boolean verifyFalse(boolean condition) {
+		boolean pass = true;
+		try {
+			Assert.assertFalse(condition);
+			System.out.println(" -------------------------- PASSED -------------------------- ");
+		} catch (Throwable e) {
+			System.out.println(" -------------------------- FAILED -------------------------- ");
+			pass = false;
+			VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
+			Reporter.getCurrentTestResult().setThrowable(e);
+		}
+		return pass;
+	}
+
+
+	protected boolean verifyEquals(Object actual, Object expected) {
+		boolean pass = true;
+		try {
+			Assert.assertEquals(actual, expected);
+			System.out.println(" -------------------------- PASSED -------------------------- ");
+		} catch (Throwable e) {
+			pass = false;
+			System.out.println(" -------------------------- FAILED -------------------------- ");
+			VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
+			Reporter.getCurrentTestResult().setThrowable(e);
+		}
+		return pass;
+	}
+
 }
