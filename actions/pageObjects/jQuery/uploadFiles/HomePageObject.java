@@ -1,4 +1,4 @@
-package pageObject.jQuery.uploadFiles;
+package pageObjects.jQuery.uploadFiles;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import commons.BasePage;
-import pageUI.jQuery.uploadFile.HomePageUI;
+import pageUIs.jQuery.uploadFile.HomePageUI;
 
 public class HomePageObject extends BasePage {
 	WebDriver driver;

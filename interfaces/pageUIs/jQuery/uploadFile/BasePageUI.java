@@ -1,4 +1,4 @@
-package pageUI.jQuery.uploadFile;
+package pageUIs.jQuery.uploadFile;
 
 public class BasePageUI {
 

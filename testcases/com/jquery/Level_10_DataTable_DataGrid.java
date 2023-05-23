@@ -12,7 +12,8 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObject.jQuery.dataTable.HomePageObject;
+import pageObjects.jQuery.dataTable.HomePageObject;
+import pageObjects.jQuery.dataTable.PageGeneratorManager;
 
 public class Level_10_DataTable_DataGrid extends BaseTest {
 
@@ -25,7 +26,7 @@ public class Level_10_DataTable_DataGrid extends BaseTest {
 	@BeforeClass
 	public void beforeClass(String browserName, String appURL) {
 		driver = getBrowserDriver(browserName, appURL);
-		homePage = pageObject.jQuery.dataTable.PageGeneratorManager.getHomePage(driver);
+		homePage = PageGeneratorManager.getHomePage(driver);
 	}
 
 	// @Test

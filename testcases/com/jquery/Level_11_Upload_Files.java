@@ -10,7 +10,8 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObject.jQuery.uploadFiles.HomePageObject;
+import pageObjects.jQuery.uploadFiles.HomePageObject;
+import pageObjects.jQuery.uploadFiles.PageGeneratorManager;
 
 public class Level_11_Upload_Files extends BaseTest {
 
@@ -25,7 +26,7 @@ public class Level_11_Upload_Files extends BaseTest {
 	@BeforeClass
 	public void beforeClass(String browserName, String appURL) {
 		driver = getBrowserDriver(browserName, appURL);
-		homePage = pageObject.jQuery.uploadFiles.PageGeneratorManager.getHomePage(driver);
+		homePage = PageGeneratorManager.getHomePage(driver);
 	}
 
 	@Test
