@@ -16,8 +16,16 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.testng.Assert;
 import org.testng.Reporter;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 public class BaseTest {
 	private WebDriver driver;
+	protected final Log log;
+
+	protected BaseTest() {
+		log = LogFactory.getLog(getClass());
+	}
 
 	protected WebDriver getBrowserDriver(String browserName, String appUrl) {
 		BrowserList browser = BrowserList.valueOf(browserName.toUpperCase());
@@ -88,6 +96,10 @@ public class BaseTest {
 		return rand.nextInt(9999);
 
 	}
+
+
+
+
 
 	protected boolean verifyTrue(boolean condition) {
 		boolean pass = true;

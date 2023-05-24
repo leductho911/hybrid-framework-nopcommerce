@@ -8,8 +8,8 @@
 
     <parameter name ="url" value="https://www.facebook.com/"/>
 
- <test name="Run on chrome">
-  	<parameter name ="browser" value="chrome"/>
+ <test name="Run on edge">
+  	<parameter name ="browser" value="edge"/>
     <classes>
       <class name="com.facebook.register.Level_13_Element_Undisplayed"/>
     </classes>
