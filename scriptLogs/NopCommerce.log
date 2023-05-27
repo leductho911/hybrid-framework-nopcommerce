@@ -1,0 +1,137 @@
+[INFO ] [2023-05-25 14:46:52,265] Register - Step 01: Navigate to Register page
+[INFO ] [2023-05-25 14:46:53,257] Register - Step 02: Enter to Firstname textbox with value: Automation
+[INFO ] [2023-05-25 14:46:53,382] Register - Step 03: Enter to Lastname textbox with value: FC
+[INFO ] [2023-05-25 14:46:53,508] Register - Step 04: Enter to Email textbox with value: leductho2871@gmail.com
+[INFO ] [2023-05-25 14:46:53,634] Register - Step 05: Enter to Password textbox with value: 123456
+[INFO ] [2023-05-25 14:46:53,754] Register - Step 06: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2023-05-25 14:46:53,863] Register - Step 07: Click to Register Button
+[INFO ] [2023-05-25 14:46:54,540] Register - Step 08: Verify register success message is displayed
+[INFO ] [2023-05-25 14:46:54,591] Register - Step 09: Click to Continue Button
+[INFO ] [2023-05-25 14:46:54,965] Login - Step 01: Navigate to Login page
+[INFO ] [2023-05-25 14:46:55,334] Login - Step 02: Enter email to textbox: leductho2871@gmail.com
+[INFO ] [2023-05-25 14:46:55,446] Login - Step 03: Enter password to textbox123456
+[INFO ] [2023-05-25 14:46:55,568] Login - Step 04: Click to Login Button
+[INFO ] [2023-05-25 14:46:56,190] Login - Step 05: Verify My account Link is displayed
+[INFO ] [2023-05-25 14:46:56,246] Login - Step 06: Navigate to My Account page
+[INFO ] [2023-05-25 14:46:56,631] Login - Step 07: Verify My Customer Info page is displayed
+[2023-05-25 14:52:18,982] Register - Step 01: Navigate to Register page
+[2023-05-25 14:52:19,481] Register - Step 02: Enter to Firstname textbox with value: Automation
+[2023-05-25 14:52:19,598] Register - Step 03: Enter to Lastname textbox with value: FC
+[2023-05-25 14:52:19,723] Register - Step 04: Enter to Email textbox with value: leductho3432@gmail.com
+[2023-05-25 14:52:19,849] Register - Step 05: Enter to Password textbox with value: 123456
+[2023-05-25 14:52:19,969] Register - Step 06: Enter to Confirm Password textbox with value: 123456
+[2023-05-25 14:52:20,075] Register - Step 07: Click to Register Button
+[2023-05-25 14:52:20,729] Register - Step 08: Verify register success message is displayed
+[2023-05-25 14:52:20,788] Register - Step 09: Click to Continue Button
+[2023-05-25 14:52:21,181] Login - Step 01: Navigate to Login page
+[2023-05-25 14:52:21,542] Login - Step 02: Enter email to textbox: leductho3432@gmail.com
+[2023-05-25 14:52:21,641] Login - Step 03: Enter password to textbox123456
+[2023-05-25 14:52:21,749] Login - Step 04: Click to Login Button
+[2023-05-25 14:52:22,483] Login - Step 05: Verify My account Link is displayed
+[2023-05-25 14:52:22,551]  -------------------------- PASSED -------------------------- 
+[2023-05-25 14:52:22,551] Login - Step 06: Navigate to My Account page
+[2023-05-25 14:52:23,007] Login - Step 07: Verify My Customer Info page is displayed
+[2023-05-25 14:52:23,063]  -------------------------- PASSED -------------------------- 
+[2023-05-25 14:59:58,016] Register - Step 01: Navigate to 'Register' page
+[2023-05-25 14:59:59,047] Register - Step 02: Enter to Firstname textbox with value: Automation
+[2023-05-25 14:59:59,174] Register - Step 03: Enter to Lastname textbox with value: FC
+[2023-05-25 14:59:59,297] Register - Step 04: Enter to Email textbox with value: leductho380@gmail.com
+[2023-05-25 14:59:59,422] Register - Step 05: Enter to Password textbox with value: 123456
+[2023-05-25 14:59:59,543] Register - Step 06: Enter to Confirm Password textbox with value: 123456
+[2023-05-25 14:59:59,650] Register - Step 07: Click to 'Register' Button
+[2023-05-25 15:00:00,345] Register - Step 08: Verify register success message is displayed
+[2023-05-25 15:00:00,396] Register - Step 09: Click to 'Continue' Button
+[2023-05-25 15:00:00,797] Login - Step 01: Navigate to 'Login' page
+[2023-05-25 15:00:01,166] Login - Step 02: Enter email to textbox: leductho380@gmail.com
+[2023-05-25 15:00:01,280] Login - Step 03: Enter password to textbox123456
+[2023-05-25 15:00:01,390] Login - Step 04: Click to 'Login' Button
+[2023-05-25 15:00:02,032] Login - Step 05: Verify 'My account' Link is displayed
+[2023-05-25 15:00:02,097]  -------------------------- PASSED -------------------------- 
+[2023-05-25 15:00:02,097] Login - Step 06: Navigate to 'My Account' page
+[2023-05-25 15:00:02,529] Login - Step 07: Verify 'My Customer Info' page is displayed
+[2023-05-25 15:00:02,601]  -------------------------- PASSED -------------------------- 
+[2023-05-25 15:33:03,678] Register - Step 01: Navigate to 'Register' page
+[2023-05-25 15:33:04,667] Register - Step 02: Enter to Firstname textbox with value: Automation
+[2023-05-25 15:33:04,782] Register - Step 03: Enter to Lastname textbox with value: FC
+[2023-05-25 15:33:04,890] Register - Step 04: Enter to Email textbox with value: leductho2967@gmail.com
+[2023-05-25 15:33:05,001] Register - Step 05: Enter to Password textbox with value: 123456
+[2023-05-25 15:33:05,111] Register - Step 06: Enter to Confirm Password textbox with value: 123456
+[2023-05-25 15:33:05,230] Register - Step 07: Click to 'Register' Button
+[2023-05-25 15:33:05,925] Register - Step 08: Verify register success message is displayed
+[2023-05-25 15:33:05,975] Register - Step 09: Click to 'Continue' Button
+[2023-05-25 15:33:06,367] Login - Step 01: Navigate to 'Login' page
+[2023-05-25 15:33:06,736] Login - Step 02: Enter email to textbox: leductho2967@gmail.com
+[2023-05-25 15:33:06,861] Login - Step 03: Enter password to textbox123456
+[2023-05-25 15:33:06,986] Login - Step 04: Click to 'Login' Button
+[2023-05-25 15:33:07,655] Login - Step 05: Verify 'My account' Link is displayed
+[2023-05-25 15:33:07,724]  -------------------------- PASSED -------------------------- 
+[2023-05-25 15:33:07,724] Login - Step 06: Navigate to 'My Account' page
+[2023-05-25 15:33:08,114] Login - Step 07: Verify 'My Customer Info' page is displayed
+[2023-05-25 15:33:08,176]  -------------------------- PASSED -------------------------- 
+[2023-05-25 15:36:34,306] Register - Step 01: Navigate to 'Register' page
+[2023-05-25 15:36:35,664] Register - Step 02: Enter to Firstname textbox with value: Automation
+[2023-05-25 15:36:35,802] Register - Step 03: Enter to Lastname textbox with value: FC
+[2023-05-25 15:36:35,908] Register - Step 04: Enter to Email textbox with value: leductho7740@gmail.com
+[2023-05-25 15:36:36,034] Register - Step 05: Enter to Password textbox with value: 123456
+[2023-05-25 15:36:36,158] Register - Step 06: Enter to Confirm Password textbox with value: 123456
+[2023-05-25 15:36:36,263] Register - Step 07: Click to 'Register' Button
+[2023-05-25 15:36:37,206] Register - Step 08: Verify register success message is displayed
+[2023-05-25 15:36:37,264] Register - Step 09: Click to 'Continue' Button
+[2023-05-25 15:36:37,723] Login - Step 01: Navigate to 'Login' page
+[2023-05-25 15:36:38,154] Login - Step 02: Enter email to textbox: leductho7740@gmail.com
+[2023-05-25 15:36:38,272] Login - Step 03: Enter password to textbox123456
+[2023-05-25 15:36:38,383] Login - Step 04: Click to 'Login' Button
+[2023-05-25 15:36:39,176] Login - Step 05: Verify 'My account' Link is displayed
+[2023-05-25 15:36:39,246]  -------------------------- PASSED -------------------------- 
+[2023-05-25 15:36:39,246] Login - Step 06: Navigate to 'My Account' page
+[2023-05-25 15:36:39,695] Login - Step 07: Verify 'My Customer Info' page is displayed
+[2023-05-25 15:36:39,754]  -------------------------- PASSED -------------------------- 
+[2023-05-25 15:38:34,013] Register - Step 01: Navigate to 'Register' page
+[2023-05-25 15:38:35,102] Register - Step 02: Enter to Firstname textbox with value: Automation
+[2023-05-25 15:38:35,224] Register - Step 03: Enter to Lastname textbox with value: FC
+[2023-05-25 15:38:35,349] Register - Step 04: Enter to Email textbox with value: leductho1541@gmail.com
+[2023-05-25 15:38:35,475] Register - Step 05: Enter to Password textbox with value: 123456
+[2023-05-25 15:38:35,594] Register - Step 06: Enter to Confirm Password textbox with value: 123456
+[2023-05-25 15:38:35,719] Register - Step 07: Click to 'Register' Button
+[2023-05-25 15:38:36,472] Register - Step 08: Verify register success message is displayed
+[2023-05-25 15:38:36,525] Register - Step 09: Click to 'Continue' Button
+[2023-05-25 15:38:36,950] Login - Step 01: Navigate to 'Login' page
+[2023-05-25 15:38:37,312] Login - Step 02: Enter email to textbox: leductho1541@gmail.com
+[2023-05-25 15:38:37,423] Login - Step 03: Enter password to textbox123456
+[2023-05-25 15:38:37,531] Login - Step 04: Click to 'Login' Button
+[2023-05-25 15:38:38,168] Login - Step 05: Verify 'My account' Link is displayed
+[2023-05-25 15:38:38,226]  -------------------------- PASSED -------------------------- 
+[2023-05-25 15:38:38,226] Login - Step 06: Navigate to 'My Account' page
+[2023-05-25 15:38:38,641] Login - Step 07: Verify 'My Customer Info' page is displayed
+[2023-05-25 15:38:38,710]  -------------------------- PASSED -------------------------- 
+[2023-05-25 17:52:37,084] Register - Step 01: Navigate to 'Register' page
+[2023-05-25 17:52:38,201] Register - Step 02: Enter to Firstname textbox with value: Automation
+[2023-05-25 17:52:38,320] Register - Step 03: Enter to Lastname textbox with value: FC
+[2023-05-25 17:52:38,444] Register - Step 04: Enter to Email textbox with value: leductho8166@gmail.com
+[2023-05-25 17:52:38,569] Register - Step 05: Enter to Password textbox with value: 123456
+[2023-05-25 17:52:38,690] Register - Step 06: Enter to Confirm Password textbox with value: 123456
+[2023-05-25 17:52:38,813] Register - Step 07: Click to 'Register' Button
+[2023-05-25 17:52:39,625] Register - Step 08: Verify register success message is displayed
+[2023-05-25 17:52:39,686] Register - Step 09: Click to 'Continue' Button
+[2023-05-25 17:52:40,375] Login - Step 01: Navigate to 'Login' page
+[2023-05-25 17:52:40,775] Login - Step 02: Enter email to textbox: leductho8166@gmail.com
+[2023-05-25 17:52:40,882] Login - Step 03: Enter password to textbox123456
+[2023-05-25 17:52:40,992] Login - Step 04: Click to 'Login' Button
+[2023-05-25 17:52:41,658] Login - Step 05: Verify 'My account' Link is displayed
+[2023-05-25 17:52:41,725]  -------------------------- FAILED -------------------------- 
+[2023-05-25 17:52:41,726] Login - Step 06: Navigate to 'My Account' page
+[2023-05-25 17:52:42,158] Login - Step 07: Verify 'My Customer Info' page is displayed
+[2023-05-25 17:52:42,226]  -------------------------- FAILED -------------------------- 
+[2023-05-25 18:04:42,589] Register - Step 01: Navigate to 'Register' page
+[2023-05-25 18:04:43,734] Register - Step 02: Enter to Firstname textbox with value: Automation
+[2023-05-25 18:04:43,856] Register - Step 03: Enter to Lastname textbox with value: FC
+[2023-05-25 18:04:43,964] Register - Step 04: Enter to Email textbox with value: leductho5078@gmail.com
+[2023-05-25 18:04:44,090] Register - Step 05: Enter to Password textbox with value: 123456
+[2023-05-25 18:04:44,209] Register - Step 06: Enter to Confirm Password textbox with value: 123456
+[2023-05-25 18:04:44,338] Register - Step 07: Click to 'Register' Button
+[2023-05-25 18:04:45,204] Register - Step 08: Verify register success message is displayed
+[2023-05-25 18:04:45,409] Login - Step 01: Navigate to 'Login' page
+[2023-05-25 18:04:45,775] Login - Step 02: Enter email to textbox: leductho5078@gmail.com
+[2023-05-25 18:04:45,892] Login - Step 03: Enter password to textbox123456
+[2023-05-25 18:04:46,002] Login - Step 04: Click to 'Login' Button
+[2023-05-25 18:04:46,645] Login - Step 05: Verify 'My account' Link is displayed

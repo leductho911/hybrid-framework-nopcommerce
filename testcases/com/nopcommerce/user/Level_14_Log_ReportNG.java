@@ -39,7 +39,7 @@ public class Level_14_Log_ReportNG extends BaseTest {
 
 	@Test
 	public void User_01_Register() {
-		log.info("Register - Step 01: Navigate to Register page");
+		log.info("Register - Step 01: Navigate to 'Register' page");
 		registerPage = homePage.clickToRegisterLink();
 
 		log.info("Register - Step 02: Enter to Firstname textbox with value: " + firstName);
@@ -57,19 +57,19 @@ public class Level_14_Log_ReportNG extends BaseTest {
 		log.info("Register - Step 06: Enter to Confirm Password textbox with value: " + validPassword);
 		registerPage.inputToConfirmPasswordTextbox(validPassword);
 
-		log.info("Register - Step 07: Click to Register Button");
+		log.info("Register - Step 07: Click to 'Register' Button");
 		registerPage.clickToRegisterButton();
 
 		log.info("Register - Step 08: Verify register success message is displayed");
-		verifyEquals(registerPage.getSuccessMessageAtRegisterPage(), "Your registration completed");
+		verifyEquals(registerPage.getSuccessMessageAtRegisterPage(), "Your registration completedssss");
 
-		log.info("Register - Step 09: Click to Continue Button");
+		log.info("Register - Step 09: Click to 'Continue' Button");
 		homePage = registerPage.clickToContinueButton();
 	}
 
 	@Test
 	public void User_02_Login() {
-		log.info("Login - Step 01: Navigate to Login page");
+		log.info("Login - Step 01: Navigate to 'Login' page");
 		loginPage = homePage.clickToLoginLink();
 
 		log.info("Login - Step 02: Enter email to textbox: " + email);
@@ -78,16 +78,16 @@ public class Level_14_Log_ReportNG extends BaseTest {
 		log.info("Login - Step 03: Enter password to textbox" + validPassword);
 		loginPage.inputToPasswordTextbox(validPassword);
 
-		log.info("Login - Step 04: Click to Login Button");
+		log.info("Login - Step 04: Click to 'Login' Button");
 		homePage = loginPage.clickToLoginButton();
 
-		log.info("Login - Step 05: Verify My account Link is displayed");
+		log.info("Login - Step 05: Verify 'My account' Link is displayed");
 		verifyTrue(homePage.isMyAccountLinkDisplayed());
 
-		log.info("Login - Step 06: Navigate to My Account page");
+		log.info("Login - Step 06: Navigate to 'My Account' page");
 		userCustomerInforPage = homePage.clickToMyAccountLink();
 
-		log.info("Login - Step 07: Verify My Customer Info page is displayed");
+		log.info("Login - Step 07: Verify 'My Customer Info' page is displayed");
 		verifyTrue(userCustomerInforPage.isCustomerInforPageDisplayed());
 	}
 
