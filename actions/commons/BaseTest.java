@@ -82,6 +82,54 @@ public class BaseTest {
 		return driver;
 	}
 
+	
+	protected WebDriver getBrowserDriver(String browserName) {
+		BrowserList browser = BrowserList.valueOf(browserName.toUpperCase());
+
+		switch (browser) {
+		case FIREFOX:
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+			break;
+		case CHROME:
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+			break;
+		case EDGE:
+			WebDriverManager.edgedriver().arch64().setup();
+			driver = new EdgeDriver();
+			break;
+		case IE:
+			WebDriverManager.iedriver().arch64().setup();
+			driver = new EdgeDriver();
+			break;
+		case SAFARI:
+			driver = new SafariDriver();
+			break;
+		case CHROME_HEADLESS:
+			WebDriverManager.chromedriver().setup();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("headless");
+			options.addArguments("window-size=1920x1080");
+			driver = new ChromeDriver(options);
+			break;
+		case FIREFOX_HEADLESS:
+			WebDriverManager.firefoxdriver().setup();
+			FirefoxOptions options1 = new FirefoxOptions();
+			options1.addArguments("--headless");
+			options1.addArguments("window-size=1920x1080");
+			driver = new FirefoxDriver(options1);
+			break;
+		default:
+			throw new BrowserNotSupport(browserName);
+		}
+
+		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
+		driver.get("https://demo.nopcommerce.com/");
+		driver.manage().window().maximize();
+		return driver;
+	}
+	
 	public WebDriver getDriverInstance() {
 		return this.driver;
 	}

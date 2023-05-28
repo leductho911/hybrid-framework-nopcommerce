@@ -1,5 +1,3 @@
-// * Framework 05 - Page Object Pattern - Part I 
-
 package com.nopcommerce.user;
 
 import commons.BaseTest;
@@ -20,10 +18,7 @@ public class Level_14_Log_ReportNG extends BaseTest {
 	private String firstName, lastName, validPassword, email;
 
 	private UserCustomerInforPageObject userCustomerInforPage;
-	private UserAddressesPageObject userAddressesPage;
-	private UserOrdersPageObject userOrdersPage;
-	private FooterWishlistPageObject footerWishlistPage;
-
+	
 	@Parameters({ "browser", "url" })
 	@BeforeClass
 	public void beforeClass(String browserName, String appUrl) {

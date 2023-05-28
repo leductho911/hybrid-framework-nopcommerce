@@ -135,3 +135,50 @@
 [2023-05-25 18:04:45,892] Login - Step 03: Enter password to textbox123456
 [2023-05-25 18:04:46,002] Login - Step 04: Click to 'Login' Button
 [2023-05-25 18:04:46,645] Login - Step 05: Verify 'My account' Link is displayed
+[2023-05-27 20:55:13,712] Login - Step 01: Navigate to 'Login' page
+[2023-05-27 20:55:14,708] Login - Step 02: Enter email to textbox: leductho3458@gmail.com
+[2023-05-27 20:55:14,833] Login - Step 03: Enter password to textbox123456
+[2023-05-27 20:55:14,952] Login - Step 04: Click to 'Login' Button
+[2023-05-27 21:35:48,125] Login - Step 01: Navigate to 'Login' page
+[2023-05-27 21:35:48,599] Login - Step 02: Enter email to textbox: leductho3445@gmail.com
+[2023-05-27 21:35:48,733] Login - Step 03: Enter password to textbox123456
+[2023-05-27 21:35:48,836] Login - Step 04: Click to 'Login' Button
+[2023-05-28 09:29:40,458] Pre-condition - Step 01: Navigate to 'Login' page
+[2023-05-28 09:29:41,428] Pre-condition - Step 02: Set cookie and reload page
+[2023-05-28 09:29:42,544] Pre-condition - Step 03: Verify 'My account' Link is displayed
+[2023-05-28 09:29:42,906]  -------------------------- PASSED -------------------------- 
+[2023-05-28 09:30:01,750] Pre-condition - Step 01: Navigate to 'Login' page
+[2023-05-28 09:30:02,230] Pre-condition - Step 02: Set cookie and reload page
+[2023-05-28 09:30:03,358] Pre-condition - Step 03: Verify 'My account' Link is displayed
+[2023-05-28 09:30:03,721]  -------------------------- PASSED -------------------------- 
+[2023-05-28 09:31:57,228] Pre-condition - Step 01: Navigate to 'Login' page
+[2023-05-28 09:31:58,297] Pre-condition - Step 02: Set cookie and reload page
+[2023-05-28 09:32:02,736] Pre-condition - Step 03: Verify 'My account' Link is displayed
+[2023-05-28 09:32:02,804]  -------------------------- PASSED -------------------------- 
+[2023-05-28 09:33:40,941] Pre-condition - Step 01: Navigate to 'Login' page
+[2023-05-28 09:33:41,884] Pre-condition - Step 02: Set cookie and reload page
+[2023-05-28 09:33:46,020] Pre-condition - Step 03: Verify 'My account' Link is displayed
+[2023-05-28 09:33:46,108]  -------------------------- PASSED -------------------------- 
+[2023-05-28 09:34:21,944] Pre-condition - Step 01: Navigate to 'Login' page
+[2023-05-28 09:34:23,002] Pre-condition - Step 02: Set cookie and reload page
+[2023-05-28 09:34:27,152] Pre-condition - Step 03: Verify 'My account' Link is displayed
+[2023-05-28 09:34:27,219]  -------------------------- PASSED -------------------------- 
+[2023-05-28 09:36:03,182] Pre-condition - Step 01: Navigate to 'Login' page
+[2023-05-28 09:36:03,644] Pre-condition - Step 02: Set cookie and reload page
+[2023-05-28 09:36:15,129] Pre-condition - Step 03: Verify 'My account' Link is displayed
+[2023-05-28 09:36:15,204]  -------------------------- PASSED -------------------------- 
+[2023-05-28 09:49:28,221] Pre-condition - Step 01: Navigate to 'Login' page
+[2023-05-28 09:49:29,350] Pre-condition - Step 02: Set cookie and reload page
+[2023-05-28 09:49:33,472] Pre-condition - Step 03: Verify 'My account' Link is displayed
+[2023-05-28 09:49:33,546]  -------------------------- PASSED -------------------------- 
+[2023-05-28 09:49:34,591] Pre-condition - Step 04: Verify 'My account' Link is not displayed
+[2023-05-28 09:49:34,658]  -------------------------- FAILED -------------------------- 
+[2023-05-28 09:50:39,146] Pre-condition - Step 01: Navigate to 'Login' page
+[2023-05-28 09:50:40,141] Pre-condition - Step 02: Set cookie and reload page
+[2023-05-28 09:50:44,272] Pre-condition - Step 03: Verify 'My account' Link is displayed
+[2023-05-28 09:50:44,372]  -------------------------- PASSED -------------------------- 
+[2023-05-28 09:50:48,454] Pre-condition - Step 04: Verify 'My account' Link is not displayed
+[2023-05-28 09:54:01,874] Pre-condition - Step 01: Navigate to 'Login' page
+[2023-05-28 09:54:02,885] Pre-condition - Step 02: Set cookie and reload page
+[2023-05-28 09:54:07,020] Pre-condition - Step 03: Verify 'My account' Link is displayed
+[2023-05-28 09:54:07,104]  -------------------------- PASSED -------------------------- 

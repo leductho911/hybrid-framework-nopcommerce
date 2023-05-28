@@ -1,5 +1,8 @@
 package pageObjects.nopCommerce.user;
 
+import java.util.Set;
+
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
@@ -40,5 +43,7 @@ public class UserHomePageObject extends BasePage {
 		clickToElement(driver, UserHomePageUI.MY_ACCOUNT_LINK);
 		return PageGeneratorManager.getUserCustomerInforPage(driver);
 	}
+
+	
 
 }

@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -39,6 +40,26 @@ public class BasePage {
 		clickToElement(driver, UserBasePageUI.DYNAMIC_PAGES_AT_MY_ACCOUNT_SIDEBAR, pageName);
 	}
 
+	
+	public Set<Cookie> getAllCookies(WebDriver driver) {
+		return driver.manage().getCookies();
+	}
+	
+	public void setCookies(WebDriver driver, Set<Cookie> cookies) {
+		for (Cookie cookie : cookies) {
+			driver.manage().addCookie(cookie);
+		}
+		sleepInSecond(1);
+	}
+	
+	public void deleteAllCookies(WebDriver driver) {
+		driver.manage().deleteAllCookies();
+		sleepInSecond(1);
+	}
+	
+	
+	
+	
 	public BasePage openPageAtMyAccountPageName(WebDriver driver, String pageName) {
 		waitForElementClickable(driver, UserBasePageUI.DYNAMIC_PAGES_AT_MY_ACCOUNT_SIDEBAR, pageName);
 		clickToElement(driver, UserBasePageUI.DYNAMIC_PAGES_AT_MY_ACCOUNT_SIDEBAR, pageName);
