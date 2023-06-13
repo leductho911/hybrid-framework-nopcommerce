@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite parallel="false" name="NopCommerce">
+<suite parallel="false" name="Wordpress">
     
     <listeners>
 		<listener class-name="commons.MethodListener" />
@@ -10,13 +10,18 @@
 <!--        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>-->
     </listeners>
 
-    <parameter name ="url" value="https://demo.nopcommerce.com/"/>
+    <parameter name ="urlAdmin" value="http://localhost/demo01/wp-admin/"/>
+    <parameter name ="urlUser" value="http://localhost/demo01/"/>
 
  <test name="Run on chrome">
   	<parameter name ="browser" value="chrome"/>
-    <classes>
-      <class name="com.nopcommerce.user.Level_18_Pattern_Object"/>
-    </classes>
+    <!--  <classes>
+      <class name="com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search"/>
+    </classes> -->
+    
+    <packages>
+		<package name="com.wordpress.admin" />
+	</packages>
   </test> 
 
   

@@ -1,8 +1,11 @@
 package commons;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -610,6 +613,40 @@ public class BasePage {
 		fullFileName = fullFileName.trim();
 		getWebElement(driver, BasePageUI.UPLOAD_FILE).sendKeys(fullFileName);
 	}
+	
+	
+	public void inputToTextboxByID(WebDriver driver, String textboxID, String inputValue) {
+		waitForElementVisible(driver, UserBasePageUI.DYNAMIC_TEXTBOX_BY_ID, textboxID);
+		sendKeysToElement(driver, UserBasePageUI.DYNAMIC_TEXTBOX_BY_ID, inputValue, textboxID);
+	}
+	
+	public void clickToButtonByText(WebDriver driver, String buttonText) {
+		waitForElementClickable(driver, UserBasePageUI.DYNAMIC_BUTTON_BY_TEXT, buttonText);
+		clickToElement(driver, UserBasePageUI.DYNAMIC_BUTTON_BY_TEXT, buttonText);
+	}
+	
+	
+	
+	public void clickToLinkByText(WebDriver driver, String linkText) {
+		waitForElementClickable(driver, UserBasePageUI.DYNAMIC_LINK_BY_TEXT, linkText);
+		clickToElement(driver, UserBasePageUI.DYNAMIC_LINK_BY_TEXT, linkText);
+	}
+	
+	public void selectToDropdownByName(WebDriver driver, String dropdownAttributeName, String visibleText) {
+		waitForElementClickable(driver, UserBasePageUI.DYNAMIC_DROPDOWN_BY_NAME, dropdownAttributeName);
+		selectItemInDefaultDropdown(driver, UserBasePageUI.DYNAMIC_DROPDOWN_BY_NAME, visibleText, dropdownAttributeName);
+	}
+	
+	
+	public boolean isDataSortedAsc(WebDriver driver, String locator) {
+	    List<WebElement> elementLists = driver.findElements(By.xpath(locator));
+	    List<String> names = elementLists.stream().map(WebElement::getText).collect(Collectors.toList());
+	    List<String> sortedNames = new ArrayList<>(names);
+	    Collections.sort(sortedNames);
+
+	    return names.equals(sortedNames);
+	}
+	
 
 	private long longTimeout = GlobalConstants.LONG_TIMEOUT;
 	private long shortTimeout = GlobalConstants.SHORT_TIMEOUT;

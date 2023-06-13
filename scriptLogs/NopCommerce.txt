@@ -1,4 +1,2 @@
-[2023-05-28 09:54:01,874] Pre-condition - Step 01: Navigate to 'Login' page
-[2023-05-28 09:54:02,885] Pre-condition - Step 02: Set cookie and reload page
-[2023-05-28 09:54:07,020] Pre-condition - Step 03: Verify 'My account' Link is displayed
-[2023-05-28 09:54:07,104]  -------------------------- PASSED -------------------------- 
+[2023-06-13 14:14:38,168] OS name = Windows 10
+[2023-06-13 14:14:38,168] Driver instance name = chromedriver: chrome on windows (d49f13df94bc9c8427fb148cf7027fab)

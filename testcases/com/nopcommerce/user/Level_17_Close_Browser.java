@@ -3,13 +3,14 @@ package com.nopcommerce.user;
 import commons.BaseTest;
 import commons.PageGeneratorManager;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pageObjects.nopCommerce.user.*;
 
-public class Level_14_Log_ReportNG extends BaseTest {
+public class Level_17_Close_Browser extends BaseTest {
 
 	private WebDriver driver;
 	private UserHomePageObject homePage;
@@ -55,7 +56,7 @@ public class Level_14_Log_ReportNG extends BaseTest {
 		registerPage.clickToRegisterButton();
 
 		log.info("Register - Step 08: Verify register success message is displayed");
-		verifyEquals(registerPage.getSuccessMessageAtRegisterPage(), "Your registration completedssss");
+		Assert.assertEquals(registerPage.getSuccessMessageAtRegisterPage(), "Your registration completedssss");
 
 		log.info("Register - Step 09: Click to 'Continue' Button");
 		homePage = registerPage.clickToContinueButton();
@@ -68,7 +69,7 @@ public class Level_14_Log_ReportNG extends BaseTest {
 
 		log.info("Login - Step 02: Enter email to textbox: " + email);
 		loginPage.inputToEmailTextbox(email);
-
+		
 		log.info("Login - Step 03: Enter password to textbox" + validPassword);
 		loginPage.inputToPasswordTextbox(validPassword);
 
@@ -76,19 +77,19 @@ public class Level_14_Log_ReportNG extends BaseTest {
 		homePage = loginPage.clickToLoginButton();
 
 		log.info("Login - Step 05: Verify 'My account' Link is displayed");
-		verifyTrue(homePage.isMyAccountLinkDisplayed());
+		Assert.assertFalse(homePage.isMyAccountLinkDisplayed());
 
 		log.info("Login - Step 06: Navigate to 'My Account' page");
 		userCustomerInforPage = homePage.clickToMyAccountLink();
 
 		log.info("Login - Step 07: Verify 'My Customer Info' page is displayed");
-		verifyTrue(userCustomerInforPage.isCustomerInforPageDisplayed());
+		Assert.assertFalse(userCustomerInforPage.isCustomerInforPageDisplayed());
 	}
 
 
-	@AfterClass
+	@AfterClass (alwaysRun = true)
 	public void afterClass() {
-		driver.quit();
+		closeBrowserDriver();
 	}
 
 }

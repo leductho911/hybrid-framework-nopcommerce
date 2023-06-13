@@ -182,3 +182,188 @@
 [2023-05-28 09:54:02,885] Pre-condition - Step 02: Set cookie and reload page
 [2023-05-28 09:54:07,020] Pre-condition - Step 03: Verify 'My account' Link is displayed
 [2023-05-28 09:54:07,104]  -------------------------- PASSED -------------------------- 
+[2023-05-28 11:12:52,406] Register - Step 01: Navigate to 'Register' page
+[2023-05-28 11:12:53,494] Register - Step 02: Enter to Firstname textbox with value: Automation
+[2023-05-28 11:12:53,614] Register - Step 03: Enter to Lastname textbox with value: FC
+[2023-05-28 11:12:53,736] Register - Step 04: Enter to Email textbox with value: leductho2779@gmail.com
+[2023-05-28 11:12:53,864] Register - Step 05: Enter to Password textbox with value: 123456
+[2023-05-28 11:12:53,981] Register - Step 06: Enter to Confirm Password textbox with value: 123456
+[2023-05-28 11:12:54,090] Register - Step 07: Click to 'Register' Button
+[2023-05-28 11:12:54,744] Register - Step 08: Verify register success message is displayed
+[2023-05-28 11:12:54,980] Login - Step 01: Navigate to 'Login' page
+[2023-05-28 11:12:55,351] Login - Step 02: Enter email to textbox: leductho2779@gmail.com
+[2023-05-28 11:12:55,477] Login - Step 03: Enter password to textbox123456
+[2023-05-28 11:12:55,581] Login - Step 04: Click to 'Login' Button
+[2023-05-28 11:12:56,226] Login - Step 05: Verify 'My account' Link is displayed
+[2023-05-28 11:35:11,444] Register - Step 01: Navigate to 'Register' page
+[2023-05-28 11:35:12,518] Register - Step 02: Enter to Firstname textbox with value: Automation
+[2023-05-28 11:35:12,646] Register - Step 03: Enter to Lastname textbox with value: FC
+[2023-05-28 11:35:12,772] Register - Step 04: Enter to Email textbox with value: leductho2363@gmail.com
+[2023-05-28 11:35:12,879] Register - Step 05: Enter to Password textbox with value: 123456
+[2023-05-28 11:35:12,984] Register - Step 06: Enter to Confirm Password textbox with value: 123456
+[2023-05-28 11:35:13,107] Register - Step 07: Click to 'Register' Button
+[2023-05-28 11:35:13,756] Register - Step 08: Verify register success message is displayed
+[2023-05-28 11:35:13,981] Login - Step 01: Navigate to 'Login' page
+[2023-05-28 11:35:14,338] Login - Step 02: Enter email to textbox: leductho2363@gmail.com
+[2023-05-28 11:35:14,465] Login - Step 03: Enter password to textbox123456
+[2023-05-28 11:35:14,581] Login - Step 04: Click to 'Login' Button
+[2023-05-28 11:35:15,245] Login - Step 05: Verify 'My account' Link is displayed
+[2023-05-28 11:35:15,568] OS name = Windows 10
+[2023-05-28 11:35:15,568] Driver instance name = edgedriver: msedge on windows (70b23c27aff21003520d50ac592027c2)
+[2023-05-28 11:37:00,191] Register - Step 01: Navigate to 'Register' page
+[2023-05-28 11:37:02,393] Register - Step 02: Enter to Firstname textbox with value: Automation
+[2023-05-28 11:37:02,516] Register - Step 03: Enter to Lastname textbox with value: FC
+[2023-05-28 11:37:02,619] Register - Step 04: Enter to Email textbox with value: leductho1053@gmail.com
+[2023-05-28 11:37:02,750] Register - Step 05: Enter to Password textbox with value: 123456
+[2023-05-28 11:37:02,866] Register - Step 06: Enter to Confirm Password textbox with value: 123456
+[2023-05-28 11:37:02,990] Register - Step 07: Click to 'Register' Button
+[2023-05-28 11:37:03,743] Register - Step 08: Verify register success message is displayed
+[2023-05-28 11:37:03,963] Login - Step 01: Navigate to 'Login' page
+[2023-05-28 11:37:04,337] Login - Step 02: Enter email to textbox: leductho1053@gmail.com
+[2023-05-28 11:37:04,458] Login - Step 03: Enter password to textbox123456
+[2023-05-28 11:37:04,560] Login - Step 04: Click to 'Login' Button
+[2023-05-28 11:37:05,194] Login - Step 05: Verify 'My account' Link is displayed
+[2023-05-28 11:37:05,535] OS name = Windows 10
+[2023-05-28 11:37:05,536] Driver instance name = edgedriver: msedge on windows (94a87fc4255e7e062c0e9abd51b465cf)
+[2023-05-28 11:39:48,330] Register - Step 01: Navigate to 'Register' page
+[2023-05-28 11:39:49,441] Register - Step 02: Enter to Firstname textbox with value: Automation
+[2023-05-28 11:39:49,565] Register - Step 03: Enter to Lastname textbox with value: FC
+[2023-05-28 11:39:49,667] Register - Step 04: Enter to Email textbox with value: leductho1159@gmail.com
+[2023-05-28 11:39:49,783] Register - Step 05: Enter to Password textbox with value: 123456
+[2023-05-28 11:39:49,908] Register - Step 06: Enter to Confirm Password textbox with value: 123456
+[2023-05-28 11:39:50,033] Register - Step 07: Click to 'Register' Button
+[2023-05-28 11:39:50,864] Register - Step 08: Verify register success message is displayed
+[2023-05-28 11:39:51,081] Login - Step 01: Navigate to 'Login' page
+[2023-05-28 11:39:51,465] Login - Step 02: Enter email to textbox: leductho1159@gmail.com
+[2023-05-28 11:39:51,592] Login - Step 03: Enter password to textbox123456
+[2023-05-28 11:39:51,694] Login - Step 04: Click to 'Login' Button
+[2023-05-28 11:39:52,443] Login - Step 05: Verify 'My account' Link is displayed
+[2023-05-28 11:39:52,806] OS name = Windows 10
+[2023-05-28 11:39:52,806] Driver instance name = edgedriver: msedge on windows (d660c455712bae21c314be9d40b63fc0)
+[2023-05-28 11:46:04,159] Register - Step 01: Navigate to 'Register' page
+[2023-05-28 11:46:05,327] Register - Step 02: Enter to Firstname textbox with value: Automation
+[2023-05-28 11:46:05,455] Register - Step 03: Enter to Lastname textbox with value: FC
+[2023-05-28 11:46:05,561] Register - Step 04: Enter to Email textbox with value: leductho4447@gmail.com
+[2023-05-28 11:46:05,692] Register - Step 05: Enter to Password textbox with value: 123456
+[2023-05-28 11:46:05,793] Register - Step 06: Enter to Confirm Password textbox with value: 123456
+[2023-05-28 11:46:05,899] Register - Step 07: Click to 'Register' Button
+[2023-05-28 11:46:07,338] Register - Step 08: Verify register success message is displayed
+[2023-05-28 11:46:07,543] Login - Step 01: Navigate to 'Login' page
+[2023-05-28 11:46:07,924] Login - Step 02: Enter email to textbox: leductho4447@gmail.com
+[2023-05-28 11:46:08,047] Login - Step 03: Enter password to textbox123456
+[2023-05-28 11:46:08,146] Login - Step 04: Click to 'Login' Button
+[2023-05-28 11:46:08,797] Login - Step 05: Verify 'My account' Link is displayed
+[2023-05-28 11:46:09,133] OS name = Windows 10
+[2023-05-28 11:46:09,133] Driver instance name = edgedriver: msedge on windows (3c935f015ba5a70da0f78fd8886c4c37)
+[2023-05-28 11:46:42,018] Register - Step 01: Navigate to 'Register' page
+[2023-05-28 11:46:43,025] Register - Step 02: Enter to Firstname textbox with value: Automation
+[2023-05-28 11:46:43,152] Register - Step 03: Enter to Lastname textbox with value: FC
+[2023-05-28 11:46:43,272] Register - Step 04: Enter to Email textbox with value: leductho3441@gmail.com
+[2023-05-28 11:46:43,403] Register - Step 05: Enter to Password textbox with value: 123456
+[2023-05-28 11:46:43,519] Register - Step 06: Enter to Confirm Password textbox with value: 123456
+[2023-05-28 11:46:43,645] Register - Step 07: Click to 'Register' Button
+[2023-05-28 11:46:44,351] Register - Step 08: Verify register success message is displayed
+[2023-05-28 11:46:44,612] Login - Step 01: Navigate to 'Login' page
+[2023-05-28 11:46:44,989] Login - Step 02: Enter email to textbox: leductho3441@gmail.com
+[2023-05-28 11:46:45,111] Login - Step 03: Enter password to textbox123456
+[2023-05-28 11:46:45,211] Login - Step 04: Click to 'Login' Button
+[2023-05-28 11:46:45,925] Login - Step 05: Verify 'My account' Link is displayed
+[2023-05-28 11:46:46,255] OS name = Windows 10
+[2023-05-28 11:46:46,255] Driver instance name = edgedriver: msedge on windows (5a1ed4b6fbef988e4e62e03edbb220b0)
+[2023-05-28 11:51:22,993] Register - Step 01: Navigate to 'Register' page
+[2023-05-28 11:51:23,992] Register - Step 02: Enter to Firstname textbox with value: Automation
+[2023-05-28 11:51:24,116] Register - Step 03: Enter to Lastname textbox with value: FC
+[2023-05-28 11:51:24,234] Register - Step 04: Enter to Email textbox with value: leductho3524@gmail.com
+[2023-05-28 11:51:24,364] Register - Step 05: Enter to Password textbox with value: 123456
+[2023-05-28 11:51:24,484] Register - Step 06: Enter to Confirm Password textbox with value: 123456
+[2023-05-28 11:51:24,604] Register - Step 07: Click to 'Register' Button
+[2023-05-28 11:51:25,283] Register - Step 08: Verify register success message is displayed
+[2023-05-28 11:51:25,496] Login - Step 01: Navigate to 'Login' page
+[2023-05-28 11:51:25,925] Login - Step 02: Enter email to textbox: leductho3524@gmail.com
+[2023-05-28 11:51:26,071] Login - Step 03: Enter password to textbox123456
+[2023-05-28 11:51:26,168] Login - Step 04: Click to 'Login' Button
+[2023-05-28 11:51:26,816] Login - Step 05: Verify 'My account' Link is displayed
+[2023-05-28 11:51:27,153] OS name = Windows 10
+[2023-05-28 11:51:27,154] Driver instance name = edgedriver: msedge on windows (f0f0862fe1d48043f750fdcfceb4d2e0)
+[2023-05-28 13:59:03,175] Register - Step 01: Navigate to 'Register' page
+[2023-05-28 13:59:04,204] Register - Step 02: Enter to Firstname textbox with value: Automation
+[2023-05-28 13:59:04,328] Register - Step 03: Enter to Lastname textbox with value: FC
+[2023-05-28 13:59:04,449] Register - Step 04: Enter to Email textbox with value: leductho5404@gmail.com
+[2023-05-28 13:59:04,574] Register - Step 05: Enter to Password textbox with value: 123456
+[2023-05-28 13:59:04,692] Register - Step 06: Enter to Confirm Password textbox with value: 123456
+[2023-05-28 13:59:04,832] Register - Step 07: Click to 'Register' Button
+[2023-05-28 13:59:05,669] Register - Step 08: Verify register success message is displayed
+[2023-05-28 13:59:05,893] Login - Step 01: Navigate to 'Login' page
+[2023-05-28 13:59:06,273] Login - Step 02: Enter email to textbox: leductho5404@gmail.com
+[2023-05-28 13:59:06,384] Login - Step 03: Enter password to textbox123456
+[2023-05-28 13:59:06,496] Login - Step 04: Click to 'Login' Button
+[2023-05-28 13:59:07,193] Login - Step 05: Verify 'My account' Link is displayed
+[2023-05-28 13:59:07,548] OS name = Windows 10
+[2023-05-28 13:59:07,548] Driver instance name = chromedriver: chrome on windows (c388c6ee4fe31b2018e114a9240a8dec)
+[2023-05-28 14:01:10,345] Register - Step 01: Navigate to 'Register' page
+[2023-05-28 14:01:11,499] Register - Step 02: Enter to Firstname textbox with value: Automation
+[2023-05-28 14:01:11,621] Register - Step 03: Enter to Lastname textbox with value: FC
+[2023-05-28 14:01:11,740] Register - Step 04: Enter to Email textbox with value: leductho3509@gmail.com
+[2023-05-28 14:01:11,849] Register - Step 05: Enter to Password textbox with value: 123456
+[2023-05-28 14:01:11,991] Register - Step 06: Enter to Confirm Password textbox with value: 123456
+[2023-05-28 14:01:12,111] Register - Step 07: Click to 'Register' Button
+[2023-05-28 14:01:12,930] Register - Step 08: Verify register success message is displayed
+[2023-05-28 14:01:13,158] Login - Step 01: Navigate to 'Login' page
+[2023-05-28 14:01:13,637] Login - Step 02: Enter email to textbox: leductho3509@gmail.com
+[2023-05-28 14:01:13,758] Login - Step 03: Enter password to textbox123456
+[2023-05-28 14:01:13,871] Login - Step 04: Click to 'Login' Button
+[2023-05-28 14:01:14,674] Login - Step 05: Verify 'My account' Link is displayed
+[2023-05-28 14:01:15,004] OS name = Windows 10
+[2023-05-28 14:01:15,005] Driver instance name = chromedriver: chrome on windows (b3162f080aff29255576d3da0f44fd8a)
+[2023-05-28 16:02:05,274] Register - Step 01: Navigate to 'Register' page
+[2023-05-28 16:02:06,325] Register - Step 02: Enter to Firstname textbox with value: Automation
+[2023-05-28 16:02:06,453] Register - Step 03: Enter to Lastname textbox with value: FC
+[2023-05-28 16:02:06,563] Register - Step 04: Enter to Email textbox with value: leductho8292@gmail.com
+[2023-05-28 16:02:06,672] Register - Step 05: Enter to Password textbox with value: 123456
+[2023-05-28 16:02:06,776] Register - Step 06: Enter to Confirm Password textbox with value: 123456
+[2023-05-28 16:02:06,899] Register - Step 07: Click to  'Register' Button
+[2023-05-28 16:02:07,657] Register - Step 08: Verify register success message is displayed
+[2023-05-28 16:02:07,873] OS name = Windows 10
+[2023-05-28 16:02:07,873] Driver instance name = chromedriver: chrome on windows (eed0b1e45ad566398f4a5577344c8a66)
+[2023-05-28 16:02:39,046] Register - Step 01: Navigate to 'Register' page
+[2023-05-28 16:02:40,043] Register - Step 02: Enter to Firstname textbox with value: Automation
+[2023-05-28 16:02:40,164] Register - Step 03: Enter to Lastname textbox with value: FC
+[2023-05-28 16:02:40,288] Register - Step 04: Enter to Email textbox with value: leductho1110@gmail.com
+[2023-05-28 16:02:40,412] Register - Step 05: Enter to Password textbox with value: 123456
+[2023-05-28 16:02:40,531] Register - Step 06: Enter to Confirm Password textbox with value: 123456
+[2023-05-28 16:02:40,642] Register - Step 07: Click to  'Register' Button
+[2023-05-28 16:02:41,382] Register - Step 08: Verify register success message is displayed
+[2023-05-28 16:02:41,430] Register - Step 09: Click to 'Continue' Button
+[2023-05-28 16:03:11,661] OS name = Windows 10
+[2023-05-28 16:03:11,662] Driver instance name = chromedriver: chrome on windows (45a1f6c804cbb35a4ed842cc6a59cb8c)
+[2023-05-28 16:05:38,929] Register - Step 01: Navigate to 'Register' page
+[2023-05-28 16:05:39,958] Register - Step 02: Enter to Firstname textbox with value: Automation
+[2023-05-28 16:05:40,081] Register - Step 03: Enter to Lastname textbox with value: FC
+[2023-05-28 16:05:40,203] Register - Step 04: Enter to Email textbox with value: leductho7623@gmail.com
+[2023-05-28 16:05:40,326] Register - Step 05: Enter to Password textbox with value: 123456
+[2023-05-28 16:05:40,444] Register - Step 06: Enter to Confirm Password textbox with value: 123456
+[2023-05-28 16:05:40,569] Register - Step 07: Click to  'Register' Button
+[2023-05-28 16:05:41,378] Register - Step 08: Verify register success message is displayed
+[2023-05-28 16:05:41,435] Register - Step 09: Click to 'Continue' Button
+[2023-05-28 16:05:46,877] OS name = Windows 10
+[2023-05-28 16:05:46,877] Driver instance name = chromedriver: chrome on windows (7efebdb53607384d27bebf73b951fa26)
+[2023-06-13 13:41:31,093] OS name = Windows 10
+[2023-06-13 13:41:31,094] Driver instance name = chromedriver: chrome on windows (83005210ede3ec053ca74fa72b9917bc)
+[2023-06-13 13:49:16,290] OS name = Windows 10
+[2023-06-13 13:49:16,291] Driver instance name = chromedriver: chrome on windows (92c758f0d85d9060cd2675e27c41d0f0)
+[2023-06-13 13:51:26,044] OS name = Windows 10
+[2023-06-13 13:51:26,044] Driver instance name = chromedriver: chrome on windows (c73364fd276da91c58fff19cf5245367)
+[2023-06-13 13:54:23,433] OS name = Windows 10
+[2023-06-13 13:54:23,434] Driver instance name = chromedriver: chrome on windows (54194bf29379ed44fca2ee07dd985885)
+[2023-06-13 13:56:41,007] OS name = Windows 10
+[2023-06-13 13:56:41,007] Driver instance name = chromedriver: chrome on windows (05ca7ac94d961b8b46ff055bbc82cf5c)
+[2023-06-13 13:59:11,450] OS name = Windows 10
+[2023-06-13 13:59:11,450] Driver instance name = chromedriver: chrome on windows (52a1f541172990f7fea46b4ae7d2397e)
+[2023-06-13 13:59:48,129] OS name = Windows 10
+[2023-06-13 13:59:48,129] Driver instance name = chromedriver: chrome on windows (3aa713f38dc7d9ad20f4442cc646dab5)
+[2023-06-13 14:00:27,678] OS name = Windows 10
+[2023-06-13 14:00:27,678] Driver instance name = chromedriver: chrome on windows (1ecbc54eeb3838854982268404c46a41)
+[2023-06-13 14:11:47,359] OS name = Windows 10
+[2023-06-13 14:11:47,360] Driver instance name = chromedriver: chrome on windows (18c5d1099921d82302540e3bb20cb4e0)
+[2023-06-13 14:14:38,168] OS name = Windows 10
+[2023-06-13 14:14:38,168] Driver instance name = chromedriver: chrome on windows (d49f13df94bc9c8427fb148cf7027fab)
