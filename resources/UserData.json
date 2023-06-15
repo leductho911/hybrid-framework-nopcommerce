@@ -1,0 +1,13 @@
+{
+  "firstName": "Roselia",
+  "lastName": "Yendall",
+  "email": "ryendall0@youku.com",
+  "validPassword": "yF5+O2\\.",
+  "date": "10",
+  "month": "August",
+  "year": "1990",
+  "login": {
+		"username": "Automation",
+		"password": "123465"
+        }
+}
