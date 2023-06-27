@@ -1,0 +1,54 @@
+[2023-06-19 15:36:09,893] Register - Step 01: Navigate to 'Register' page
+[2023-06-19 15:36:10,876] Register - Step 02: Enter to Firstname textbox with value: Roselia
+[2023-06-19 15:36:10,991] Register - Step 03: Enter to Lastname textbox with value: Yendall
+[2023-06-19 15:36:11,118] Register - Step 04: Select date of birth
+[2023-06-19 15:36:11,438] Register - Step 05: Enter to Email textbox with value: ryendall0@youku.com
+[2023-06-19 15:36:11,556] Register - Step 06: Enter to Password textbox with value: yF5+O2\.
+[2023-06-19 15:36:11,677] Register - Step 07: Enter to Confirm Password textbox with value: yF5+O2\.
+[2023-06-19 15:36:11,801] Register - Step 08: Click to  'Register' Button
+[2023-06-19 15:36:12,544] Register - Step 09: Verify register success message is displayed
+[2023-06-19 15:36:12,592] Register - Step 10: Click to 'Continue' Button
+[2023-06-19 15:36:13,030] OS name = Windows 10
+[2023-06-19 15:36:13,030] Driver instance name = chromedriver: chrome on windows (cd2eadc2e8f3549efaec9ae4593d0ac8)
+[2023-06-19 15:37:57,277] OS name = Windows 10
+[2023-06-19 15:37:57,278] 
+[2023-06-19 15:38:16,069] Register - Step 01: Navigate to 'Register' page
+[2023-06-19 15:38:46,374] OS name = Windows 10
+[2023-06-19 15:38:46,374] Driver instance name = chromedriver: chrome on windows (d4b9c2cd3d1f2c4e973fe5f5fdc90524)
+[2023-06-19 15:38:46,392] no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=114.0.5735.134)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-5FGD853', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Asus\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53217}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d4b9c2cd3d1f2c4e973fe5f5fdc90524
+[2023-06-21 11:43:31,373] OS name = Windows 10
+[2023-06-21 11:43:31,374] Driver instance name = chromedriver: chrome on windows (3c5997e1090eeab838d1d2818a24b5d5)
+[2023-06-21 11:46:07,257] OS name = Windows 10
+[2023-06-21 11:46:07,257] Driver instance name = chromedriver: chrome on windows (9b1a2666b2d47087404d052406b3a612)
+[2023-06-21 11:47:35,733] OS name = Windows 10
+[2023-06-21 11:47:35,733] Driver instance name = chromedriver: chrome on windows (dba6649d8cb977ddfab1b9311cbea598)
+[2023-06-21 11:49:20,290] Register - Step 01: Navigate to 'Register' page
+[2023-06-21 11:49:22,154] OS name = Windows 10
+[2023-06-21 11:49:22,155] Driver instance name = chromedriver: chrome on windows (c33bd0e9a32b7c28557bb6654082d328)
+[2023-06-21 11:49:22,171] disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=114.0.5735.134)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-5FGD853', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Asus\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64143}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c33bd0e9a32b7c28557bb6654082d328
+[2023-06-21 11:49:42,324] Register - Step 01: Navigate to 'Register' page
+[2023-06-21 11:49:43,292] Register - Step 02: Enter to Firstname textbox with value: Roselia
+[2023-06-21 11:49:43,422] Register - Step 03: Enter to Lastname textbox with value: Yendall
+[2023-06-21 11:49:43,551] Register - Step 04: Select date of birth
+[2023-06-21 11:49:43,869] Register - Step 05: Enter to Email textbox with value: ryendall0@youku.com
+[2023-06-21 11:49:43,983] Register - Step 06: Enter to Password textbox with value: yF5+O2\.
+[2023-06-21 11:49:44,107] Register - Step 07: Enter to Confirm Password textbox with value: yF5+O2\.
+[2023-06-21 11:49:44,232] Register - Step 08: Click to  'Register' Button
+[2023-06-21 11:49:44,968] Register - Step 09: Verify register success message is displayed
+[2023-06-21 11:49:45,029] Register - Step 10: Click to 'Continue' Button
+[2023-06-21 11:49:45,481] OS name = Windows 10
+[2023-06-21 11:49:45,481] Driver instance name = chromedriver: chrome on windows (2ee32274e772a3074794993f9dc39f2d)

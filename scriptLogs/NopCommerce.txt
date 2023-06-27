@@ -1,0 +1,12 @@
+[2023-06-21 11:49:42,324] Register - Step 01: Navigate to 'Register' page
+[2023-06-21 11:49:43,292] Register - Step 02: Enter to Firstname textbox with value: Roselia
+[2023-06-21 11:49:43,422] Register - Step 03: Enter to Lastname textbox with value: Yendall
+[2023-06-21 11:49:43,551] Register - Step 04: Select date of birth
+[2023-06-21 11:49:43,869] Register - Step 05: Enter to Email textbox with value: ryendall0@youku.com
+[2023-06-21 11:49:43,983] Register - Step 06: Enter to Password textbox with value: yF5+O2\.
+[2023-06-21 11:49:44,107] Register - Step 07: Enter to Confirm Password textbox with value: yF5+O2\.
+[2023-06-21 11:49:44,232] Register - Step 08: Click to  'Register' Button
+[2023-06-21 11:49:44,968] Register - Step 09: Verify register success message is displayed
+[2023-06-21 11:49:45,029] Register - Step 10: Click to 'Continue' Button
+[2023-06-21 11:49:45,481] OS name = Windows 10
+[2023-06-21 11:49:45,481] Driver instance name = chromedriver: chrome on windows (2ee32274e772a3074794993f9dc39f2d)
